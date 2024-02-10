@@ -118,6 +118,7 @@ class ContactsController extends Controller
     {
         $contact->delete();
 
+//        return to_route('contacts')->with('success', 'Contact restored.');
         return Redirect::back()->with('success', 'Contact deleted.');
     }
 
